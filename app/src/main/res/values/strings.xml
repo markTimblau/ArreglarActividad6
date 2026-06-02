@@ -26,6 +26,8 @@
     <string name="hubris">Hubris</string>
     <string name="plegado">Plegado</string>
     <string name="desplegado">Desplegado</string>
+    <string name="CDlogo">logo de la pagina</string>
+    <string name="CDdesplegable">imagen para acceder al menu</string>
 
 
     <string name="lorem_ipsum">

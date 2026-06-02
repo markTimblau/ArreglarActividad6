@@ -24,6 +24,7 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:layout_marginStart="16dp"
             android:src="@mipmap/ic_logo"
+            android:contentDescription="@string/CDlogo"
             />
 
         <!-- Título centrado -->
@@ -44,6 +45,7 @@
             android:layout_height="48dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:src="@drawable/baseline_menu_24"
+            android:contentDescription="@string/CDdesplegable"
             android:layout_gravity="end|center_vertical"
             android:layout_marginEnd="16dp"/>
 
