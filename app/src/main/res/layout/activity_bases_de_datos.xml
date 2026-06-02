@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     tools:context=".BasesDeDatos">
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/menu"
         android:layout_width="match_parent"
@@ -24,13 +25,24 @@
             android:contentDescription="@string/CDlogo"
             />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/lig_of_leyends"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="24sp" />
+
         <ImageButton
             android:id="@+id/btnMenu"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:src="@drawable/baseline_menu_24"
-            android:layout_gravity="end"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="16dp"
             android:contentDescription="@string/CDdesplegable"/>
     </androidx.appcompat.widget.Toolbar>
 
@@ -67,16 +79,14 @@
             app:tint="@color/colorSecondary" />
     </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/LlCampeones"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="8dp"
-            android:background="@color/colorPrimaryDark"
-            app:layout_constraintTop_toBottomOf="@+id/llTitulo1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+    <LinearLayout
+        android:id="@+id/LlCampeones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintTop_toBottomOf="@+id/llTitulo1">
 
         <LinearLayout
             android:layout_width="130dp"
@@ -84,159 +94,52 @@
             android:background="@color/colorHighlightDark"
             android:orientation="horizontal"
             android:padding="5dp">
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:background="@color/purple_500"
-                    android:contentDescription="@string/aatrox"
-                    android:src="@mipmap/aatrox"
-                    app:tint="@color/white" />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@color/purple_500"
+                android:contentDescription="@string/aatrox"
+                android:src="@mipmap/aatrox"
+                app:tint="@color/white" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorHighlightDark"
                 android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="5dp"
-                android:textColor="@color/goldText"
-                android:text="@string/aatrox"
-                android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/goldText"
+                    android:text="@string/aatrox"
+                    android:textStyle="bold" />
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/colorHighlightDark"
                     android:orientation="horizontal"
                     android:padding="5dp">
-                <ImageButton
-                    android:layout_width="match_parent"
-                    android:layout_weight="0.5"
-                    android:contentDescription="@string/editar"
-                    android:layout_height="wrap_content"
-                    android:background="@color/purple_500"
-                    android:src="@drawable/edit">
-                </ImageButton>
                     <ImageButton
-                        android:layout_width="match_parent"
-                        android:layout_weight="0.5"
-                        android:contentDescription="@string/eliminar"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/editar"
                         android:background="@color/purple_500"
-                        android:src="@drawable/delete">
-                    </ImageButton>
+                        android:src="@drawable/edit" />
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/eliminar"
+                        android:background="@color/purple_500"
+                        android:src="@drawable/delete" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-            <LinearLayout
-                android:layout_width="130dp"
-                android:layout_height="75dp"
-                android:background="@color/colorHighlightDark"
-                android:orientation="horizontal"
-                android:padding="5dp">
+    </LinearLayout>
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:background="@color/purple_500"
-                    android:contentDescription="@string/ahri"
-                    android:src="@mipmap/ahri"
-                    app:tint="@color/white" />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorHighlightDark"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginTop="5dp"
-                        android:textColor="@color/goldText"
-                        android:text="@string/ahri"
-                        android:textStyle="bold" />
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@color/colorHighlightDark"
-                        android:orientation="horizontal"
-                        android:padding="5dp">
-                        <ImageButton
-                            android:layout_width="match_parent"
-                            android:layout_weight="0.5"
-                            android:contentDescription="@string/editar"
-                            android:layout_height="wrap_content"
-                            android:background="@color/purple_500"
-                            android:src="@drawable/edit">
-                        </ImageButton>
-                        <ImageButton
-                            android:layout_width="match_parent"
-                            android:layout_weight="0.5"
-                            android:contentDescription="@string/eliminar"
-                            android:layout_height="wrap_content"
-                            android:background="@color/purple_500"
-                            android:src="@drawable/delete">
-                        </ImageButton>
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="130dp"
-                android:layout_height="75dp"
-                android:background="@color/colorHighlightDark"
-                android:orientation="horizontal"
-                android:padding="5dp">
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:background="@color/purple_500"
-                    android:contentDescription="@string/akali"
-                    android:src="@mipmap/akali"
-                    app:tint="@color/white" />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorHighlightDark"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginTop="5dp"
-                        android:textColor="@color/goldText"
-                        android:text="@string/akali"
-                        android:textStyle="bold" />
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@color/colorHighlightDark"
-                        android:orientation="horizontal"
-                        android:padding="5dp">
-                        <ImageButton
-                            android:layout_width="match_parent"
-                            android:layout_weight="0.5"
-                            android:contentDescription="@string/editar"
-                            android:layout_height="wrap_content"
-                            android:background="@color/purple_500"
-                            android:src="@drawable/edit">
-                        </ImageButton>
-                        <ImageButton
-                            android:layout_width="match_parent"
-                            android:layout_weight="0.5"
-                            android:contentDescription="@string/eliminar"
-                            android:layout_height="wrap_content"
-                            android:background="@color/purple_500"
-                            android:src="@drawable/delete">
-                        </ImageButton>
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
     <LinearLayout
         android:id="@+id/llTitulo2"
         android:layout_width="match_parent"
@@ -269,17 +172,15 @@
             android:src="@drawable/down_arrow"
             app:tint="@color/colorSecondary" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/LlObjetos"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="8dp"
         android:background="@color/colorPrimaryDark"
-        app:layout_constraintTop_toBottomOf="@+id/llTitulo2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-
+        app:layout_constraintTop_toBottomOf="@+id/llTitulo2">
         <LinearLayout
             android:layout_width="130dp"
             android:layout_height="75dp"
@@ -314,127 +215,19 @@
                     android:orientation="horizontal"
                     android:padding="5dp">
                     <ImageButton
-                        android:layout_width="match_parent"
-                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:contentDescription="@string/editar"
-                        android:layout_height="wrap_content"
                         android:background="@color/purple_500"
-                        android:src="@drawable/edit">
-                    </ImageButton>
+                        android:src="@drawable/edit" />
                     <ImageButton
-                        android:layout_width="match_parent"
-                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:contentDescription="@string/eliminar"
-                        android:layout_height="wrap_content"
                         android:background="@color/purple_500"
-                        android:src="@drawable/delete">
-                    </ImageButton>
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="130dp"
-            android:layout_height="75dp"
-            android:background="@color/colorHighlightDark"
-            android:orientation="horizontal"
-            android:padding="5dp">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:background="@color/purple_500"
-                android:contentDescription="@string/hubris"
-                android:src="@mipmap/hubris"
-                app:tint="@color/white" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorHighlightDark"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:textColor="@color/goldText"
-                    android:text="@string/hubris"
-                    android:textStyle="bold" />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorHighlightDark"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="match_parent"
-                        android:layout_weight="0.5"
-                        android:contentDescription="@string/editar"
-                        android:layout_height="wrap_content"
-                        android:background="@color/purple_500"
-                        android:src="@drawable/edit">
-                    </ImageButton>
-                    <ImageButton
-                        android:layout_width="match_parent"
-                        android:layout_weight="0.5"
-                        android:contentDescription="@string/eliminar"
-                        android:layout_height="wrap_content"
-                        android:background="@color/purple_500"
-                        android:src="@drawable/delete">
-                    </ImageButton>
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="130dp"
-            android:layout_height="75dp"
-            android:background="@color/colorHighlightDark"
-            android:orientation="horizontal"
-            android:padding="5dp">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:background="@color/purple_500"
-                android:contentDescription="@string/randuin"
-                android:src="@mipmap/randuin"
-                app:tint="@color/white" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorHighlightDark"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:textColor="@color/goldText"
-                    android:text="@string/randuin"
-                    android:textStyle="bold" />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorHighlightDark"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="match_parent"
-                        android:layout_weight="0.5"
-                        android:contentDescription="@string/editar"
-                        android:layout_height="wrap_content"
-                        android:background="@color/purple_500"
-                        android:src="@drawable/edit">
-                    </ImageButton>
-                    <ImageButton
-                        android:layout_width="match_parent"
-                        android:layout_weight="0.5"
-                        android:contentDescription="@string/eliminar"
-                        android:layout_height="wrap_content"
-                        android:background="@color/purple_500"
-                        android:src="@drawable/delete">
-                    </ImageButton>
+                        android:src="@drawable/delete" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

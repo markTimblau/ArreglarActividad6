@@ -78,6 +78,8 @@
     <string name="foros">Foros</string>
     <string name="base_de_datos">Base de Datos</string>
     <string name="crear_gu_a">Crear Guía</string>
+    <string name="crear_foro">Crear Foro</string>
+    <string name="configuracion">Configuración</string>
     <string name="descripcion_configuracion">Configuración de la cuenta</string>
     <string name="desc_lista_guias">Listado de guías de campeones</string>
     <string name="desc_guia_detalle">Detalle de la guía seleccionada</string>
@@ -87,4 +89,5 @@
     <string name="desc_crear_foro">Formulario para crear un nuevo foro</string>
     <string name="desc_lista_noticias">Últimas noticias de League of Legends</string>
     <string name="desc_noticia_detalle">Detalle de la noticia</string>
+    <string name="desc_pagina_principal">Aquí se verá elementos destacados de la mayor parte de las otras paginas</string>
 </resources>

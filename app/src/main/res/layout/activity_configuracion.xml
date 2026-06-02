@@ -24,13 +24,24 @@
             android:contentDescription="@string/CDlogo"
             />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/lig_of_leyends"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="24sp" />
+
         <ImageButton
             android:id="@+id/btnMenu"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:src="@drawable/baseline_menu_24"
-            android:layout_gravity="end"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="16dp"
             android:contentDescription="@string/CDdesplegable"/>
     </androidx.appcompat.widget.Toolbar>
 
