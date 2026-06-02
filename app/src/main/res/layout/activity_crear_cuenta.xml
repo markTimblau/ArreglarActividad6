@@ -23,6 +23,7 @@
             android:id="@+id/ivBack"
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:src="@drawable/back_arrow"
             android:contentDescription="@string/atras"
             app:tint="@color/colorSecondary" />
     </LinearLayout>
