@@ -31,7 +31,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Lig of leyends"
+            android:text="@string/lig_of_leyends"
             android:textColor="@color/black"
             android:layout_gravity="center"
             android:gravity="center"
@@ -55,7 +55,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:text="Build Recomendas"
+        android:text="@string/build_recomendas"
         android:textColor="@color/black"
         android:textSize="30sp"
         app:layout_constraintTop_toBottomOf="@+id/menu"

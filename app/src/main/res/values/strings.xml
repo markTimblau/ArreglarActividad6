@@ -28,6 +28,9 @@
     <string name="desplegado">Desplegado</string>
     <string name="CDlogo">logo de la pagina</string>
     <string name="CDdesplegable">imagen para acceder al menu</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="lig_of_leyends">Lig of leyends</string>
+    <string name="build_recomendas">Build Recomendas</string>
 
 
     <string name="lorem_ipsum">
