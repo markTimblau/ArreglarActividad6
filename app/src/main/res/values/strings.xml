@@ -10,7 +10,7 @@
     <string name="administrador">Administrador</string>
     <string name="selecciona_tu_rango">Selecciona tu rango</string>
     <string name="creacion_de_cuenta">Creacion de cuenta</string>
-    <string name="n_usuario">Nombre</string>
+    <string name="n_usuario">Nombre de usuario</string>
     <string name="c_usuario">Contraseña</string>
     <string name="acceder">Acceder</string>
     <string name="atras">atras</string>
@@ -31,6 +31,9 @@
     <string name="hello_world">Hello World!</string>
     <string name="lig_of_leyends">Lig of leyends</string>
     <string name="build_recomendas">Build Recomendas</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="no_tienes_cuenta">¿No tienes cuenta? </string>
+    <string name="registrate_aqui">Regístrate aquí</string>
 
 
     <string name="lorem_ipsum">
@@ -69,4 +72,19 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="inicio">Inicio</string>
+    <string name="gu_as">Guías</string>
+    <string name="noticias">Noticias</string>
+    <string name="foros">Foros</string>
+    <string name="base_de_datos">Base de Datos</string>
+    <string name="crear_gu_a">Crear Guía</string>
+    <string name="descripcion_configuracion">Configuración de la cuenta</string>
+    <string name="desc_lista_guias">Listado de guías de campeones</string>
+    <string name="desc_guia_detalle">Detalle de la guía seleccionada</string>
+    <string name="desc_crear_guia">Formulario para crear una nueva guía</string>
+    <string name="desc_lista_foros">Listado de foros de la comunidad</string>
+    <string name="desc_foro_detalle">Conversaciones del foro</string>
+    <string name="desc_crear_foro">Formulario para crear un nuevo foro</string>
+    <string name="desc_lista_noticias">Últimas noticias de League of Legends</string>
+    <string name="desc_noticia_detalle">Detalle de la noticia</string>
 </resources>

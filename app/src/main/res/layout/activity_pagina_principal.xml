@@ -16,7 +16,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <!-- Logo a la izquierda -->
         <ImageView
             android:layout_width="60dp"
             android:layout_height="wrap_content"
@@ -27,7 +26,6 @@
             android:contentDescription="@string/CDlogo"
             />
 
-        <!-- Título centrado -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -38,7 +36,6 @@
             android:textStyle="bold"
             android:textSize="35sp" />
 
-        <!-- Menú a la derecha -->
         <ImageButton
             android:id="@+id/btnMenu"
             android:layout_width="48dp"
@@ -51,4 +48,5 @@
 
 
     </androidx.appcompat.widget.Toolbar>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
